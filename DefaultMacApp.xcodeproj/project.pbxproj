@@ -1,0 +1,907 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		680F60AF292F31A60002DAE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F60AE292F31A60002DAE9 /* AppDelegate.swift */; };
+		680F60B1292F31A60002DAE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F60B0292F31A60002DAE9 /* ViewController.swift */; };
+		680F60B3292F31A70002DAE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680F60B2292F31A70002DAE9 /* Assets.xcassets */; };
+		680F60B6292F31A70002DAE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680F60B4292F31A70002DAE9 /* Main.storyboard */; };
+		680F60C4292F33FA0002DAE9 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F60C3292F33FA0002DAE9 /* SafariWebExtensionHandler.swift */; };
+		680F60C7292F33FA0002DAE9 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 680F60C6292F33FA0002DAE9 /* _locales */; };
+		680F60C9292F33FA0002DAE9 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 680F60C8292F33FA0002DAE9 /* images */; };
+		680F60CB292F33FA0002DAE9 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 680F60CA292F33FA0002DAE9 /* manifest.json */; };
+		680F60CD292F33FA0002DAE9 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 680F60CC292F33FA0002DAE9 /* background.js */; };
+		680F60CF292F33FA0002DAE9 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 680F60CE292F33FA0002DAE9 /* content.js */; };
+		680F60D1292F33FA0002DAE9 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 680F60D0292F33FA0002DAE9 /* popup.html */; };
+		680F60D3292F33FA0002DAE9 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 680F60D2292F33FA0002DAE9 /* popup.css */; };
+		680F60D5292F33FA0002DAE9 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 680F60D4292F33FA0002DAE9 /* popup.js */; };
+		680F60DA292F33FA0002DAE9 /* SafariChat.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 680F60C1292F33FA0002DAE9 /* SafariChat.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		680F60E6292F601C0002DAE9 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F60E5292F601C0002DAE9 /* SafariExtensionHandler.swift */; };
+		680F60E8292F601C0002DAE9 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F60E7292F601C0002DAE9 /* SafariExtensionViewController.swift */; };
+		680F60EB292F601C0002DAE9 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 680F60EA292F601C0002DAE9 /* script.js */; };
+		680F60ED292F601C0002DAE9 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 680F60EC292F601C0002DAE9 /* ToolbarItemIcon.pdf */; };
+		680F60F0292F601C0002DAE9 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 680F60EE292F601C0002DAE9 /* SafariExtensionViewController.xib */; };
+		680F60F5292F601C0002DAE9 /* SafariAppChat.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 680F60E3292F601C0002DAE9 /* SafariAppChat.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		68A96A9B2930D0D20099991A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A96A9A2930D0D20099991A /* Cocoa.framework */; };
+		68A96A9D2930D0D20099991A /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A96A9C2930D0D20099991A /* XcodeKit.framework */; };
+		68A96AA02930D0D20099991A /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A96A9F2930D0D20099991A /* SourceEditorExtension.swift */; };
+		68A96AA22930D0D20099991A /* SnapshotCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A96AA12930D0D20099991A /* SnapshotCommand.swift */; };
+		68A96AA72930D0D20099991A /* XcodeChat.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 68A96A982930D0D20099991A /* XcodeChat.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		68A96AAD2930D26A0099991A /* Splash in Frameworks */ = {isa = PBXBuildFile; productRef = 68A96AAC2930D26A0099991A /* Splash */; };
+		68A96AAF2930D2F20099991A /* ChatCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A96AAE2930D2F20099991A /* ChatCommand.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		680F60D8292F33FA0002DAE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 680F60A3292F31A60002DAE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 680F60C0292F33FA0002DAE9;
+			remoteInfo = SafariChat;
+		};
+		680F60F3292F601C0002DAE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 680F60A3292F31A60002DAE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 680F60E2292F601C0002DAE9;
+			remoteInfo = SafariAppChat;
+		};
+		68A96AA52930D0D20099991A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 680F60A3292F31A60002DAE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68A96A972930D0D20099991A;
+			remoteInfo = XcodeChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		680F60DE292F33FA0002DAE9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				68A96AA72930D0D20099991A /* XcodeChat.appex in Embed Foundation Extensions */,
+				680F60F5292F601C0002DAE9 /* SafariAppChat.appex in Embed Foundation Extensions */,
+				680F60DA292F33FA0002DAE9 /* SafariChat.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		680F60AB292F31A60002DAE9 /* DefaultMacApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DefaultMacApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		680F60AE292F31A60002DAE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		680F60B0292F31A60002DAE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		680F60B2292F31A70002DAE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		680F60B5292F31A70002DAE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		680F60B7292F31A70002DAE9 /* DefaultMacApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DefaultMacApp.entitlements; sourceTree = "<group>"; };
+		680F60C1292F33FA0002DAE9 /* SafariChat.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SafariChat.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		680F60C3292F33FA0002DAE9 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		680F60C6292F33FA0002DAE9 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		680F60C8292F33FA0002DAE9 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		680F60CA292F33FA0002DAE9 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		680F60CC292F33FA0002DAE9 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		680F60CE292F33FA0002DAE9 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		680F60D0292F33FA0002DAE9 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		680F60D2292F33FA0002DAE9 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		680F60D4292F33FA0002DAE9 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		680F60D6292F33FA0002DAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		680F60D7292F33FA0002DAE9 /* SafariChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafariChat.entitlements; sourceTree = "<group>"; };
+		680F60E3292F601C0002DAE9 /* SafariAppChat.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SafariAppChat.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		680F60E5292F601C0002DAE9 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		680F60E7292F601C0002DAE9 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		680F60EA292F601C0002DAE9 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		680F60EC292F601C0002DAE9 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		680F60EF292F601C0002DAE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		680F60F1292F601C0002DAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		680F60F2292F601C0002DAE9 /* SafariAppChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafariAppChat.entitlements; sourceTree = "<group>"; };
+		68A96A982930D0D20099991A /* XcodeChat.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XcodeChat.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A96A9A2930D0D20099991A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		68A96A9C2930D0D20099991A /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		68A96A9F2930D0D20099991A /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		68A96AA12930D0D20099991A /* SnapshotCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotCommand.swift; sourceTree = "<group>"; };
+		68A96AA32930D0D20099991A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68A96AA42930D0D20099991A /* XcodeChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeChat.entitlements; sourceTree = "<group>"; };
+		68A96AAE2930D2F20099991A /* ChatCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCommand.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		680F60A8292F31A60002DAE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68A96AAD2930D26A0099991A /* Splash in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680F60BE292F33FA0002DAE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680F60E0292F601C0002DAE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68A96A952930D0D20099991A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68A96A9B2930D0D20099991A /* Cocoa.framework in Frameworks */,
+				68A96A9D2930D0D20099991A /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		680F60A2292F31A60002DAE9 = {
+			isa = PBXGroup;
+			children = (
+				680F60AD292F31A60002DAE9 /* DefaultMacApp */,
+				680F60C2292F33FA0002DAE9 /* SafariChat */,
+				68A96A9E2930D0D20099991A /* XcodeChat */,
+				680F60E4292F601C0002DAE9 /* SafariAppChat */,
+				68A96A992930D0D20099991A /* Frameworks */,
+				680F60AC292F31A60002DAE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		680F60AC292F31A60002DAE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				680F60AB292F31A60002DAE9 /* DefaultMacApp.app */,
+				680F60C1292F33FA0002DAE9 /* SafariChat.appex */,
+				680F60E3292F601C0002DAE9 /* SafariAppChat.appex */,
+				68A96A982930D0D20099991A /* XcodeChat.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		680F60AD292F31A60002DAE9 /* DefaultMacApp */ = {
+			isa = PBXGroup;
+			children = (
+				680F60AE292F31A60002DAE9 /* AppDelegate.swift */,
+				680F60B0292F31A60002DAE9 /* ViewController.swift */,
+				680F60B2292F31A70002DAE9 /* Assets.xcassets */,
+				680F60B4292F31A70002DAE9 /* Main.storyboard */,
+				680F60B7292F31A70002DAE9 /* DefaultMacApp.entitlements */,
+			);
+			path = DefaultMacApp;
+			sourceTree = "<group>";
+		};
+		680F60C2292F33FA0002DAE9 /* SafariChat */ = {
+			isa = PBXGroup;
+			children = (
+				680F60C3292F33FA0002DAE9 /* SafariWebExtensionHandler.swift */,
+				680F60D6292F33FA0002DAE9 /* Info.plist */,
+				680F60D7292F33FA0002DAE9 /* SafariChat.entitlements */,
+				680F60C5292F33FA0002DAE9 /* Resources */,
+			);
+			path = SafariChat;
+			sourceTree = "<group>";
+		};
+		680F60C5292F33FA0002DAE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				680F60C6292F33FA0002DAE9 /* _locales */,
+				680F60C8292F33FA0002DAE9 /* images */,
+				680F60CA292F33FA0002DAE9 /* manifest.json */,
+				680F60CC292F33FA0002DAE9 /* background.js */,
+				680F60CE292F33FA0002DAE9 /* content.js */,
+				680F60D0292F33FA0002DAE9 /* popup.html */,
+				680F60D2292F33FA0002DAE9 /* popup.css */,
+				680F60D4292F33FA0002DAE9 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		680F60E4292F601C0002DAE9 /* SafariAppChat */ = {
+			isa = PBXGroup;
+			children = (
+				680F60E5292F601C0002DAE9 /* SafariExtensionHandler.swift */,
+				680F60E7292F601C0002DAE9 /* SafariExtensionViewController.swift */,
+				680F60EE292F601C0002DAE9 /* SafariExtensionViewController.xib */,
+				680F60F1292F601C0002DAE9 /* Info.plist */,
+				680F60F2292F601C0002DAE9 /* SafariAppChat.entitlements */,
+				680F60E9292F601C0002DAE9 /* Resources */,
+			);
+			path = SafariAppChat;
+			sourceTree = "<group>";
+		};
+		680F60E9292F601C0002DAE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				680F60EA292F601C0002DAE9 /* script.js */,
+				680F60EC292F601C0002DAE9 /* ToolbarItemIcon.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		68A96A992930D0D20099991A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68A96A9A2930D0D20099991A /* Cocoa.framework */,
+				68A96A9C2930D0D20099991A /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68A96A9E2930D0D20099991A /* XcodeChat */ = {
+			isa = PBXGroup;
+			children = (
+				68A96A9F2930D0D20099991A /* SourceEditorExtension.swift */,
+				68A96AAE2930D2F20099991A /* ChatCommand.swift */,
+				68A96AA12930D0D20099991A /* SnapshotCommand.swift */,
+				68A96AA32930D0D20099991A /* Info.plist */,
+				68A96AA42930D0D20099991A /* XcodeChat.entitlements */,
+			);
+			path = XcodeChat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		680F60AA292F31A60002DAE9 /* DefaultMacApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 680F60BA292F31A70002DAE9 /* Build configuration list for PBXNativeTarget "DefaultMacApp" */;
+			buildPhases = (
+				680F60A7292F31A60002DAE9 /* Sources */,
+				680F60A8292F31A60002DAE9 /* Frameworks */,
+				680F60A9292F31A60002DAE9 /* Resources */,
+				680F60DE292F33FA0002DAE9 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				680F60D9292F33FA0002DAE9 /* PBXTargetDependency */,
+				680F60F4292F601C0002DAE9 /* PBXTargetDependency */,
+				68A96AA62930D0D20099991A /* PBXTargetDependency */,
+			);
+			name = DefaultMacApp;
+			packageProductDependencies = (
+				68A96AAC2930D26A0099991A /* Splash */,
+			);
+			productName = DefaultMacApp;
+			productReference = 680F60AB292F31A60002DAE9 /* DefaultMacApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		680F60C0292F33FA0002DAE9 /* SafariChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 680F60DB292F33FA0002DAE9 /* Build configuration list for PBXNativeTarget "SafariChat" */;
+			buildPhases = (
+				680F60BD292F33FA0002DAE9 /* Sources */,
+				680F60BE292F33FA0002DAE9 /* Frameworks */,
+				680F60BF292F33FA0002DAE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafariChat;
+			productName = SafariChat;
+			productReference = 680F60C1292F33FA0002DAE9 /* SafariChat.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		680F60E2292F601C0002DAE9 /* SafariAppChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 680F60F6292F601C0002DAE9 /* Build configuration list for PBXNativeTarget "SafariAppChat" */;
+			buildPhases = (
+				680F60DF292F601C0002DAE9 /* Sources */,
+				680F60E0292F601C0002DAE9 /* Frameworks */,
+				680F60E1292F601C0002DAE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafariAppChat;
+			productName = SafariAppChat;
+			productReference = 680F60E3292F601C0002DAE9 /* SafariAppChat.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		68A96A972930D0D20099991A /* XcodeChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68A96AAA2930D0D20099991A /* Build configuration list for PBXNativeTarget "XcodeChat" */;
+			buildPhases = (
+				68A96A942930D0D20099991A /* Sources */,
+				68A96A952930D0D20099991A /* Frameworks */,
+				68A96A962930D0D20099991A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XcodeChat;
+			productName = XcodeChat;
+			productReference = 68A96A982930D0D20099991A /* XcodeChat.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		680F60A3292F31A60002DAE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					680F60AA292F31A60002DAE9 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					680F60C0292F33FA0002DAE9 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					680F60E2292F601C0002DAE9 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					68A96A972930D0D20099991A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 680F60A6292F31A60002DAE9 /* Build configuration list for PBXProject "DefaultMacApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 680F60A2292F31A60002DAE9;
+			packageReferences = (
+				68A96AAB2930D26A0099991A /* XCRemoteSwiftPackageReference "Splash" */,
+			);
+			productRefGroup = 680F60AC292F31A60002DAE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				680F60AA292F31A60002DAE9 /* DefaultMacApp */,
+				680F60C0292F33FA0002DAE9 /* SafariChat */,
+				680F60E2292F601C0002DAE9 /* SafariAppChat */,
+				68A96A972930D0D20099991A /* XcodeChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		680F60A9292F31A60002DAE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680F60B3292F31A70002DAE9 /* Assets.xcassets in Resources */,
+				680F60B6292F31A70002DAE9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680F60BF292F33FA0002DAE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680F60CD292F33FA0002DAE9 /* background.js in Resources */,
+				680F60D3292F33FA0002DAE9 /* popup.css in Resources */,
+				680F60D1292F33FA0002DAE9 /* popup.html in Resources */,
+				680F60C9292F33FA0002DAE9 /* images in Resources */,
+				680F60CB292F33FA0002DAE9 /* manifest.json in Resources */,
+				680F60C7292F33FA0002DAE9 /* _locales in Resources */,
+				680F60CF292F33FA0002DAE9 /* content.js in Resources */,
+				680F60D5292F33FA0002DAE9 /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680F60E1292F601C0002DAE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680F60F0292F601C0002DAE9 /* SafariExtensionViewController.xib in Resources */,
+				680F60ED292F601C0002DAE9 /* ToolbarItemIcon.pdf in Resources */,
+				680F60EB292F601C0002DAE9 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68A96A962930D0D20099991A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		680F60A7292F31A60002DAE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680F60B1292F31A60002DAE9 /* ViewController.swift in Sources */,
+				680F60AF292F31A60002DAE9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680F60BD292F33FA0002DAE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680F60C4292F33FA0002DAE9 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680F60DF292F601C0002DAE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680F60E8292F601C0002DAE9 /* SafariExtensionViewController.swift in Sources */,
+				680F60E6292F601C0002DAE9 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68A96A942930D0D20099991A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68A96AAF2930D2F20099991A /* ChatCommand.swift in Sources */,
+				68A96AA02930D0D20099991A /* SourceEditorExtension.swift in Sources */,
+				68A96AA22930D0D20099991A /* SnapshotCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		680F60D9292F33FA0002DAE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 680F60C0292F33FA0002DAE9 /* SafariChat */;
+			targetProxy = 680F60D8292F33FA0002DAE9 /* PBXContainerItemProxy */;
+		};
+		680F60F4292F601C0002DAE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 680F60E2292F601C0002DAE9 /* SafariAppChat */;
+			targetProxy = 680F60F3292F601C0002DAE9 /* PBXContainerItemProxy */;
+		};
+		68A96AA62930D0D20099991A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68A96A972930D0D20099991A /* XcodeChat */;
+			targetProxy = 68A96AA52930D0D20099991A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		680F60B4292F31A70002DAE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				680F60B5292F31A70002DAE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		680F60EE292F601C0002DAE9 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				680F60EF292F601C0002DAE9 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		680F60B8292F31A70002DAE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		680F60B9292F31A70002DAE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		680F60BB292F31A70002DAE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DefaultMacApp/DefaultMacApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadahae.DefaultMacApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		680F60BC292F31A70002DAE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DefaultMacApp/DefaultMacApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadahae.DefaultMacApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		680F60DC292F33FA0002DAE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SafariChat/SafariChat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafariChat/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SafariChat;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadahae.DefaultMacApp.SafariChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		680F60DD292F33FA0002DAE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SafariChat/SafariChat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafariChat/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SafariChat;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadahae.DefaultMacApp.SafariChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		680F60F7292F601C0002DAE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SafariAppChat/SafariAppChat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafariAppChat/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SafariAppChat;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadahae.DefaultMacApp.SafariAppChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		680F60F8292F601C0002DAE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SafariAppChat/SafariAppChat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SafariAppChat/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SafariAppChat;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadahae.DefaultMacApp.SafariAppChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		68A96AA82930D0D20099991A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XcodeChat/XcodeChat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XcodeChat/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = XcodeChat;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadahae.DefaultMacApp.XcodeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		68A96AA92930D0D20099991A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XcodeChat/XcodeChat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XcodeChat/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = XcodeChat;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadahae.DefaultMacApp.XcodeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		680F60A6292F31A60002DAE9 /* Build configuration list for PBXProject "DefaultMacApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				680F60B8292F31A70002DAE9 /* Debug */,
+				680F60B9292F31A70002DAE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		680F60BA292F31A70002DAE9 /* Build configuration list for PBXNativeTarget "DefaultMacApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				680F60BB292F31A70002DAE9 /* Debug */,
+				680F60BC292F31A70002DAE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		680F60DB292F33FA0002DAE9 /* Build configuration list for PBXNativeTarget "SafariChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				680F60DC292F33FA0002DAE9 /* Debug */,
+				680F60DD292F33FA0002DAE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		680F60F6292F601C0002DAE9 /* Build configuration list for PBXNativeTarget "SafariAppChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				680F60F7292F601C0002DAE9 /* Debug */,
+				680F60F8292F601C0002DAE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68A96AAA2930D0D20099991A /* Build configuration list for PBXNativeTarget "XcodeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68A96AA82930D0D20099991A /* Debug */,
+				68A96AA92930D0D20099991A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68A96AAB2930D26A0099991A /* XCRemoteSwiftPackageReference "Splash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnSundell/Splash";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68A96AAC2930D26A0099991A /* Splash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68A96AAB2930D26A0099991A /* XCRemoteSwiftPackageReference "Splash" */;
+			productName = Splash;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 680F60A3292F31A60002DAE9 /* Project object */;
+}
