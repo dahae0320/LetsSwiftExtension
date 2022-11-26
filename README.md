@@ -12,5 +12,6 @@ iOS 개발자의 친구, Safari와 Xcode의 확장 프로그램을 써보신 적
 
 이러한 사용 경험을 개발 경험으로 바꾼다면 어떨까요? 
 
-이 세션에서는 Safari Extension과 Xcode Extension을 만드는 과정을 간단하게 공유해 드리려고 합니다. 과자 먹듯이 가볍게 들어주세요!
+이 세션에서는 Safari Extension과 Xcode Extension을 만드는 과정을 간단하게 공유해 드리려고 합니다. 
+과자 먹듯이 가볍게 들어주세요!
 ```
