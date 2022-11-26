@@ -27,12 +27,13 @@
 		680F60ED292F601C0002DAE9 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 680F60EC292F601C0002DAE9 /* ToolbarItemIcon.pdf */; };
 		680F60F0292F601C0002DAE9 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 680F60EE292F601C0002DAE9 /* SafariExtensionViewController.xib */; };
 		680F60F5292F601C0002DAE9 /* SafariAppChat.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 680F60E3292F601C0002DAE9 /* SafariAppChat.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		684263632930EA8100CF6D04 /* Splash in Frameworks */ = {isa = PBXBuildFile; productRef = 684263622930EA8100CF6D04 /* Splash */; };
+		684263652930EB3900CF6D04 /* Splash in Frameworks */ = {isa = PBXBuildFile; productRef = 684263642930EB3900CF6D04 /* Splash */; };
 		68A96A9B2930D0D20099991A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A96A9A2930D0D20099991A /* Cocoa.framework */; };
 		68A96A9D2930D0D20099991A /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A96A9C2930D0D20099991A /* XcodeKit.framework */; };
 		68A96AA02930D0D20099991A /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A96A9F2930D0D20099991A /* SourceEditorExtension.swift */; };
 		68A96AA22930D0D20099991A /* SnapshotCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A96AA12930D0D20099991A /* SnapshotCommand.swift */; };
-		68A96AA72930D0D20099991A /* XcodeChat.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 68A96A982930D0D20099991A /* XcodeChat.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		68A96AAD2930D26A0099991A /* Splash in Frameworks */ = {isa = PBXBuildFile; productRef = 68A96AAC2930D26A0099991A /* Splash */; };
+		68A96AA72930D0D20099991A /* XcodeChat2.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 68A96A982930D0D20099991A /* XcodeChat2.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		68A96AAF2930D2F20099991A /* ChatCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A96AAE2930D2F20099991A /* ChatCommand.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +68,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				68A96AA72930D0D20099991A /* XcodeChat.appex in Embed Foundation Extensions */,
+				68A96AA72930D0D20099991A /* XcodeChat2.appex in Embed Foundation Extensions */,
 				680F60F5292F601C0002DAE9 /* SafariAppChat.appex in Embed Foundation Extensions */,
 				680F60DA292F33FA0002DAE9 /* SafariChat.appex in Embed Foundation Extensions */,
 			);
@@ -103,7 +104,7 @@
 		680F60EF292F601C0002DAE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
 		680F60F1292F601C0002DAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		680F60F2292F601C0002DAE9 /* SafariAppChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafariAppChat.entitlements; sourceTree = "<group>"; };
-		68A96A982930D0D20099991A /* XcodeChat.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XcodeChat.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A96A982930D0D20099991A /* XcodeChat2.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XcodeChat2.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A96A9A2930D0D20099991A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		68A96A9C2930D0D20099991A /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		68A96A9F2930D0D20099991A /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
@@ -118,7 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68A96AAD2930D26A0099991A /* Splash in Frameworks */,
+				684263632930EA8100CF6D04 /* Splash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +143,7 @@
 			files = (
 				68A96A9B2930D0D20099991A /* Cocoa.framework in Frameworks */,
 				68A96A9D2930D0D20099991A /* XcodeKit.framework in Frameworks */,
+				684263652930EB3900CF6D04 /* Splash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,7 +168,7 @@
 				680F60AB292F31A60002DAE9 /* DefaultMacApp.app */,
 				680F60C1292F33FA0002DAE9 /* SafariChat.appex */,
 				680F60E3292F601C0002DAE9 /* SafariAppChat.appex */,
-				68A96A982930D0D20099991A /* XcodeChat.appex */,
+				68A96A982930D0D20099991A /* XcodeChat2.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,7 +275,7 @@
 			);
 			name = DefaultMacApp;
 			packageProductDependencies = (
-				68A96AAC2930D26A0099991A /* Splash */,
+				684263622930EA8100CF6D04 /* Splash */,
 			);
 			productName = DefaultMacApp;
 			productReference = 680F60AB292F31A60002DAE9 /* DefaultMacApp.app */;
@@ -313,9 +315,9 @@
 			productReference = 680F60E3292F601C0002DAE9 /* SafariAppChat.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		68A96A972930D0D20099991A /* XcodeChat */ = {
+		68A96A972930D0D20099991A /* XcodeChat2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 68A96AAA2930D0D20099991A /* Build configuration list for PBXNativeTarget "XcodeChat" */;
+			buildConfigurationList = 68A96AAA2930D0D20099991A /* Build configuration list for PBXNativeTarget "XcodeChat2" */;
 			buildPhases = (
 				68A96A942930D0D20099991A /* Sources */,
 				68A96A952930D0D20099991A /* Frameworks */,
@@ -325,9 +327,12 @@
 			);
 			dependencies = (
 			);
-			name = XcodeChat;
+			name = XcodeChat2;
+			packageProductDependencies = (
+				684263642930EB3900CF6D04 /* Splash */,
+			);
 			productName = XcodeChat;
-			productReference = 68A96A982930D0D20099991A /* XcodeChat.appex */;
+			productReference = 68A96A982930D0D20099991A /* XcodeChat2.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -364,7 +369,7 @@
 			);
 			mainGroup = 680F60A2292F31A60002DAE9;
 			packageReferences = (
-				68A96AAB2930D26A0099991A /* XCRemoteSwiftPackageReference "Splash" */,
+				684263612930EA8100CF6D04 /* XCRemoteSwiftPackageReference "Splash" */,
 			);
 			productRefGroup = 680F60AC292F31A60002DAE9 /* Products */;
 			projectDirPath = "";
@@ -373,7 +378,7 @@
 				680F60AA292F31A60002DAE9 /* DefaultMacApp */,
 				680F60C0292F33FA0002DAE9 /* SafariChat */,
 				680F60E2292F601C0002DAE9 /* SafariAppChat */,
-				68A96A972930D0D20099991A /* XcodeChat */,
+				68A96A972930D0D20099991A /* XcodeChat2 */,
 			);
 		};
 /* End PBXProject section */
@@ -474,7 +479,7 @@
 		};
 		68A96AA62930D0D20099991A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 68A96A972930D0D20099991A /* XcodeChat */;
+			target = 68A96A972930D0D20099991A /* XcodeChat2 */;
 			targetProxy = 68A96AA52930D0D20099991A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -622,6 +627,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T9YFXL798;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -648,6 +654,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T9YFXL798;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -670,6 +677,7 @@
 				CODE_SIGN_ENTITLEMENTS = SafariChat/SafariChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T9YFXL798;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SafariChat/Info.plist;
@@ -700,6 +708,7 @@
 				CODE_SIGN_ENTITLEMENTS = SafariChat/SafariChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T9YFXL798;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SafariChat/Info.plist;
@@ -730,6 +739,7 @@
 				CODE_SIGN_ENTITLEMENTS = SafariAppChat/SafariAppChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T9YFXL798;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SafariAppChat/Info.plist;
@@ -760,6 +770,7 @@
 				CODE_SIGN_ENTITLEMENTS = SafariAppChat/SafariAppChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T9YFXL798;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SafariAppChat/Info.plist;
@@ -791,17 +802,19 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T9YFXL798;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = XcodeChat/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = XcodeChat;
+				INFOPLIST_KEY_CFBundleDisplayName = XcodeChat2;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dadahae.DefaultMacApp.XcodeChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadahae.DefaultMacApp.XcodeChat2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -816,17 +829,19 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T9YFXL798;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = XcodeChat/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = XcodeChat;
+				INFOPLIST_KEY_CFBundleDisplayName = XcodeChat2;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.dadahae.DefaultMacApp.XcodeChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadahae.DefaultMacApp.XcodeChat2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -873,7 +888,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		68A96AAA2930D0D20099991A /* Build configuration list for PBXNativeTarget "XcodeChat" */ = {
+		68A96AAA2930D0D20099991A /* Build configuration list for PBXNativeTarget "XcodeChat2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				68A96AA82930D0D20099991A /* Debug */,
@@ -885,20 +900,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		68A96AAB2930D26A0099991A /* XCRemoteSwiftPackageReference "Splash" */ = {
+		684263612930EA8100CF6D04 /* XCRemoteSwiftPackageReference "Splash" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/JohnSundell/Splash";
+			repositoryURL = "https://github.com/godrm/Splash";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		68A96AAC2930D26A0099991A /* Splash */ = {
+		684263622930EA8100CF6D04 /* Splash */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 68A96AAB2930D26A0099991A /* XCRemoteSwiftPackageReference "Splash" */;
+			package = 684263612930EA8100CF6D04 /* XCRemoteSwiftPackageReference "Splash" */;
+			productName = Splash;
+		};
+		684263642930EB3900CF6D04 /* Splash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 684263612930EA8100CF6D04 /* XCRemoteSwiftPackageReference "Splash" */;
 			productName = Splash;
 		};
 /* End XCSwiftPackageProductDependency section */

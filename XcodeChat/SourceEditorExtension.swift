@@ -20,10 +20,14 @@ class SourceEditorExtension: NSObject, XCSourceEditorExtension {
         // If your extension needs to return a collection of command definitions that differs from those in its Info.plist, implement this optional property getter.
         /// ChatCommand 등록
         let namespace = Bundle(for: type(of: self)).bundleIdentifier!
+        let snapshotMarker = SnapshotCommand.className()
         let chatMarker = ChatCommand.className()
         return [[.identifierKey: namespace + chatMarker,
-             .classNameKey: chatMarker,
-             .nameKey: NSLocalizedString("Chat", comment: "Send the code to chat")]]
+                 .classNameKey: chatMarker,
+                 .nameKey: NSLocalizedString("Chat", comment: "Send the code to chat")],
+                [.identifierKey: namespace + snapshotMarker,
+                 .classNameKey: snapshotMarker,
+                 .nameKey: NSLocalizedString("Snapshot", comment: "Snap code")]]
     }
     
 }

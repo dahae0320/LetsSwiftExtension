@@ -3,10 +3,10 @@
     {
       "identity" : "splash",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/JohnSundell/Splash",
+      "location" : "https://github.com/godrm/Splash",
       "state" : {
-        "revision" : "7f4df436eb78fe64fe2c32c58006e9949fa28ad8",
-        "version" : "0.16.0"
+        "branch" : "master",
+        "revision" : "d2d445b772721f11d76312486872f792453ed2d6"
       }
     }
   ],
