@@ -27,7 +27,7 @@ class SourceEditorExtension: NSObject, XCSourceEditorExtension {
                  .nameKey: NSLocalizedString("Chat", comment: "Send the code to chat")],
                 [.identifierKey: namespace + snapshotMarker,
                  .classNameKey: snapshotMarker,
-                 .nameKey: NSLocalizedString("Snapshot", comment: "Snap code")]]
+                 .nameKey: NSLocalizedString("Xshot", comment: "Snap code")]]
     }
     
 }
